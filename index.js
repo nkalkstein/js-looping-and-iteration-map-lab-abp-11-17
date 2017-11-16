@@ -3,16 +3,14 @@ function lowerCaseDrivers(drivers) {
   return newList
 }
 
-function nameToAttributes(drivers){
-  firstName = []
-  lastName = []
+function nameToAttributes(list){
+  return list.map(function(driver) {
+    const firstDriver = driver.split(' ')[0];
+    const lastDriver = driver.split(' ')[1];
 
-  const newDrivers = drivers.map(function (name) {
-    return Object.assign({}, name, {firstName: 'name' });
+  return { firstName: firstDriver, lastName: lastDriver }
   });
 
-  newDrivers;
-}
 
 function attributesToPhrase(drivers) {
   const attributes = drivers.map(function (account) {
