@@ -1,3 +1,3 @@
 function lowerCaseDrivers(drivers) {
-  drivers.map(function(name) {return name.toLowerCase();})
+  const newList = drivers.map(function(name) {return name.toLowerCase();})
 }
