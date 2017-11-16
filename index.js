@@ -9,7 +9,7 @@ function nameToAttributes(list){
     const lastDriver = driver.split(' ')[1];
 
     return { firstName: firstDriver, lastName: lastDriver };
-  }
+  });
 }
 
 
