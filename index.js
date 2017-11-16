@@ -8,8 +8,9 @@ function nameToAttributes(list){
     const firstDriver = driver.split(' ')[0];
     const lastDriver = driver.split(' ')[1];
 
-  return { firstName: firstDriver, lastName: lastDriver }
-  });
+    return { firstName: firstDriver, lastName: lastDriver };
+  }
+}
 
 
 function attributesToPhrase(drivers) {
